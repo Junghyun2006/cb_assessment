@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 const Repos = ({ repos }) => {
     return (
-        <div>
+        <div className="repos-container">
             {repos.map((repo) => (< Repo key={repo.id} repo={repo} />))}
         </div>
     )

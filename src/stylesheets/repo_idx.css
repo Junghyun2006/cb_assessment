@@ -1,0 +1,4 @@
+.repos-container {
+    display: flex;
+    flex-direction: row;
+}
