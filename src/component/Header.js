@@ -1,7 +1,7 @@
 const Header = () => {
     return (
-        <div>
-            This is the Header
+        <div className="header">
+            Github Browser
         </div>
     )
 }

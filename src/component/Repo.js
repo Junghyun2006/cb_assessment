@@ -16,10 +16,10 @@ const Repo = ({repo}) => {
 
     return (
         <div className='repo-card'>
-            {repo.name}
-            {repo.stargazers_count}
-            {languages.map((language, i) => (<li key={i} >{language}</li>))}
-            {repo.description}
+            <div className='repo-name'>{repo.name}</div>
+            <div className='repo-stargazer'>{repo.stargazers_count}</div>
+            <div className='repo-languages'>{languages.map((language, i) => (<li key={i} >{language}</li>))}</div>
+            <div className='repo-description'>{repo.description}</div>
         </div>
     )
 }

@@ -16,7 +16,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className="home">
             <Header />
             <UserSearch userSearch={userSearch} handleUserSearch={handleUserSearch}/>
             <button onClick={submitSearch}>github</button>

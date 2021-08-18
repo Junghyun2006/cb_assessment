@@ -1,3 +1,10 @@
 @import './reset.css';
 @import './repo_card.css';
 @import './repo_idx.css';
+@import './home.css';
+@import './header.css';
+@import './search.css';
+
+html {
+    background-color: #f3f3f3;
+}
