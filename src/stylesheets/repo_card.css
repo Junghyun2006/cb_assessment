@@ -1,11 +1,49 @@
 .repo-card {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    width: 340px;
+    width: 380px;
     height: 200px;
     margin: 0px 13px 26px;
     padding: 15px;
     background: #fff;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+    text-decoration: none;
+    color: black;
+}
+
+.repo-name {
+    font-size: 20px;
+}
+
+.repo-divider {
+    border-bottom: 1px solid gray;
+    margin-top: 5px;
+}
+
+.repo-description {
+    margin-top: 10px;
+    height: 200px;
+}
+
+.repo-languages {
+    display: flex;
+    position: relative;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.repo-language-item {
+    border-radius: 2px;
+    padding: 4px;
+    margin-right: 4px;
+    color: black;
+}
+
+.repo-language-not-detected {
+    border-radius: 2px;
+    padding: 4px;
+    margin-right: 4px;
+    color: rgb(63, 63, 63);
+    border: 1px solid lightgray;
+    background-color: rgb(240, 240, 240);
 }

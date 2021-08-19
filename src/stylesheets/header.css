@@ -1,6 +1,9 @@
 .header {
-    /* width: 100%; */
-    background-color: black;
-    height: 50px;
-    color: white;
+  display: flex;
+  background-color: black;
+  height: 50px;
+  color: white;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 20px;
 }

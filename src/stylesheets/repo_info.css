@@ -1,0 +1,47 @@
+.repo-info-container {
+    padding: 40px 200px 40px 200px;
+}
+
+.repo-info-name {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.repo-info-border {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.repo-info-other {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.repo-info-link {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.repo-readme-btn {
+    margin-top: 10px;
+    background-color:rgb(80, 80, 80);
+    color: white;
+    border: none;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.repo-readme-btn:hover {
+    background-color:black;
+}
+
+.repo-readme {
+    border: 1px solid grey;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    height: 400px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}

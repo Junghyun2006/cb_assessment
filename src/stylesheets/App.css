@@ -1,10 +1,11 @@
-@import './reset.css';
-@import './repo_card.css';
-@import './repo_idx.css';
-@import './home.css';
-@import './header.css';
-@import './search.css';
+@import "./reset.css";
+@import "./home.css";
+@import "./header.css";
+@import "./search.css";
+@import "./repo_card.css";
+@import "./repo_idx.css";
+@import "./repo_info.css";
 
 html {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
