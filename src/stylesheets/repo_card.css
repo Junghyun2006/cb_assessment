@@ -29,6 +29,7 @@
 .repo-description {
     margin-top: 10px;
     height: 200px;
+    width: calc(100% - 4px)
 }
 
 .repo-languages {
