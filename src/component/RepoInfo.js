@@ -10,7 +10,7 @@ const RepoInfo = () => {
     const location = useLocation();
     const { readMeUrl, name, stargazers_count, owner, html_url, updated_at } = location.state;
     const lastUpdated = updated_at.split('T')[0]
-
+  
     useEffect(() => {
         const fetchRepo = async () => {
             const data = await githubAPI.fetchRepoReadme(readMeUrl);
@@ -19,9 +19,11 @@ const RepoInfo = () => {
         fetchRepo();
     }, [readMeUrl])
 
+    // toggle read me button to display after button is pressed
     const handleToggleReadMe = () => setToggleReadMe(!toggleReadMe);
     
-    const b = new Buffer(readMe, 'base64')
+    // decode base64 readme content to string
+    const b = new Buffer(readMe, 'base64') 
     const s = b.toString();
 
     return (

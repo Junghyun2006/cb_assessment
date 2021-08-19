@@ -8,6 +8,7 @@ const UserSearch = ({
   err,
   emptyRepos,
 }) => {
+  // if errors exist let the user know why no results were returned
   return (
     <form className="search-container ">
       <input
@@ -32,7 +33,12 @@ const UserSearch = ({
 
 export default UserSearch;
 
+// check proptypes to prevent future bugs
+
 UserSearch.propTypes = {
   handleUserSearch: propTypes.func,
   userSearch: propTypes.string,
+  submitSearch: propTypes.func,
+  err: propTypes.bool,
+  emptyRepos: propTypes.bool,
 };

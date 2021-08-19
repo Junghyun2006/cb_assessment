@@ -9,12 +9,13 @@ const Home = () => {
   const [err, setErr] = useState(false);
   const [emptyRepos, setEmptyRepos] = useState(false);
 
+  // handle onChange Search Input
   const handleUserSearch = (e) => setUserSearch(e.target.value);
 
+  // submit form to fetch and populate repositories while catching errors
   const submitSearch = async (e) => {
     e.preventDefault();
     const data = await githubAPI.fetchUserRepos(userSearch);
-    console.log(data)
     if (data.message === "Not Found") {
       setErr(true);
       setEmptyRepos(false);

@@ -7,6 +7,7 @@ const Repo = ({ repo }) => {
 
   const { name, owner, description, languages_url, url, stargazers_count, html_url, updated_at } = repo;
 
+  //languages available in the initial repos api, fetch languages on card mount
   useEffect(() => {
     const setLanguage = async () => {
       const languages = await githubAPI.fetchRepoLanguages(languages_url);
@@ -17,6 +18,7 @@ const Repo = ({ repo }) => {
 
   const [languages, setLanguages] = useState([]);
 
+  // set color of the languages based on language
   const language_color = {
     PHP: "yellow",
     HTML: "orange",
@@ -30,6 +32,7 @@ const Repo = ({ repo }) => {
   };
 
   return (
+    // send props through Link using location
     <Link className="repo-card" to={{
         pathname: `/repoinfo/${owner.login}/${name}`,
         state: { 
@@ -69,6 +72,7 @@ const Repo = ({ repo }) => {
 
 export default Repo;
 
+// check proptypes to prevent future bugs
 Repo.propTypes = {
   repo: propTypes.object,
 };
