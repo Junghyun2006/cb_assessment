@@ -11,6 +11,12 @@
     color: black;
 }
 
+.repo-card:hover {
+    border: 2px solid lightblue;
+    width: 376px;
+    height: 196px;
+}
+
 .repo-name {
     font-size: 20px;
 }
@@ -47,3 +53,4 @@
     border: 1px solid lightgray;
     background-color: rgb(240, 240, 240);
 }
+
