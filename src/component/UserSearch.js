@@ -7,27 +7,30 @@ const UserSearch = ({
   submitSearch,
   err,
   emptyRepos,
+  userRepos,
 }) => {
   // if errors exist let the user know why no results were returned
   return (
-    <form className="search-container ">
-      <input
-        className={`user-search-input`}
-        onChange={handleUserSearch}
-        type="text"
-        value={userSearch}
-        placeholder="Search by user"
-      />
-      <button type="submit" className="search-btn" onClick={submitSearch}>
-        Search
-      </button>
+    <div>
+      <form className="search-container ">
+        <input
+          className={`user-search-input`}
+          onChange={handleUserSearch}
+          type="text"
+          value={userSearch}
+          placeholder="Search by user"
+        />
+        <button type="submit" className="search-btn" onClick={submitSearch}>
+          Search
+        </button>
+      </form>
       {err && (
         <div className="error-message">- User not found please try again</div>
       )}
-      {(emptyRepos && !err) && (
+      {emptyRepos && !err && (
         <div className="error-message">- This User's repository is empty</div>
       )}
-    </form>
+    </div>
   );
 };
 
